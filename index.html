@@ -1,53 +1,65 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>-Nenja-</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#2c3f51"><link rel="stylesheet" href="./style.css">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hubduh777</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<!-- Game canvas -->
-<canvas id="c"></canvas>
+  <header class="header">
+    <div class="logo"><img style="width: 200px; " src="IMG.png" alt=""></div>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </nav>
+  </header>
+  
+  <!-- Main Section -->
+  <section id="home" class="main-section">
+    <h1>Welcome to My Hub</h1>
+    <p>Your one-stop solution for all your needs.</p>
+    <a href="#services" class="btn">Explore Services</a>
+  </section>
 
-<!-- Gameplay HUD -->
-<div class="hud">
-	<div class="hud__score">
-		<div class="score-lbl"></div>
-		<div class="cube-count-lbl"></div>
-	</div>
-	<div class="pause-btn"><div></div></div>
-	<div class="slowmo">
-		<div class="slowmo__bar"></div>
-	</div>
-</div>
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <h2>About Us</h2>
+    <p>We are committed to delivering the best services to our clients. Our mission is to provide quality and value.</p>
+  </section>
 
-<!-- Menu System -->
-<div class="menus">
-	<div class="menu menu--main">
-		<h1>Happy Hub</h1>
-		<button type="button" class="play-normal-btn">PLAY GAME</button>
-		<button type="button" class="play-casual-btn">CASUAL MODE</button>
-		<div class="credits">This game  created  by Hub- <a href="">Caleb's</a></div>
-	</div>
-	<div class="menu menu--pause">
-		<h1>Paused</h1>
-		<button type="button" class="resume-btn">RESUME GAME</button>
-		<button type="button" class="menu-btn--pause">MAIN MENU</button>
-	</div>
-	<div class="menu menu--score">
-		<h1>Game Over</h1>
-		<h2>Your Score:</h2>
-		<div class="final-score-lbl"></div>
-		<div class="high-score-lbl"></div>
-		<button type="button" class="play-again-btn">PLAY AGAIN</button>
-		<button type="button" class="menu-btn--score">MAIN MENU</button>
-	</div>
-</div>
-<!-- partial -->
-  <script type="module" src="./script.js"></script>
+  <!-- Services Section -->
+  <section id="services" class="services-section">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+      <div class="card">
+        <h3>Web Development</h3>
+        <p>Building modern, responsive websites tailored to your needs.</p>
+      </div>
+      <div class="card">
+        <h3>SEO Optimization</h3>
+        <p>Improving your website's visibility on search engines.</p>
+      </div>
+      <div class="card">
+        <h3>Consulting</h3>
+        <p>Providing expert advice to help grow your business.</p>
+      </div>
+    </div>
+  </section>
 
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Reach out to us for any inquiries or collaborations.</p>
+    <a href="https://mail.google.com/mail/mu/mp/311/#co" class="btn">Email Us</a>
+    <!--<a href="mailto:info@mybrand.com" class="btn">Email Us</a>-->
+  </section>
+  
+  <script src="script.js"></script>
 </body>
 </html>
